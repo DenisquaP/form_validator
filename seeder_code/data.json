@@ -1,0 +1,39 @@
+{
+    "entry": [
+        {
+            "name": "form1",
+            "field1": "text",
+            "field2": "email"
+        },
+        {
+            "name": "form2",
+            "def_text": "text",
+            "def_email1": "email"
+        },
+        {
+            "name": "MyForm",
+            "email": "email"
+        },
+        {
+            "name": "Third Template",
+            "my_phone": "phone"
+        },
+        {
+            "name": "Template for E.Kom",
+            "text_field": "text",
+            "phone_field": "phone",
+            "email_field": "email"
+        },
+        {
+            "name": "Last Template",
+            "data_date": "date",
+            "data_phone": "phone"
+        },
+        {
+            "name": "form122",
+            "def_text11": "text",
+            "def_email1": "email"
+        }
+    ]
+
+}

@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongodb/mongodb-community-server:6.0-ubi8
+    ports:
+      - "27017:27017"
