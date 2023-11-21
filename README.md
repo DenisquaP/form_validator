@@ -63,7 +63,7 @@ MONGO_DATABASE=default
 - Запустите Docker compose
 - Запустите сидер для наполнения MongoDB тестовыми данными `python -m seeder_code.seeder`
 - Запустите приложение `uvicorn app.main:app --reload`
--- Можете запустить тесты(опционально)
+- Тестовые запросы к сервису находятся в [tests](/app/tests/)
 
 ## Endpoints
 |Method|Endpoint|Описание|Body/Query params example|
@@ -74,3 +74,4 @@ MONGO_DATABASE=default
 |**GET**|localhost:8000/get_forms|Все шаблоны| None|
 
 ![](/opt/query_params.png)
+![](/opt/passed_tests.png)

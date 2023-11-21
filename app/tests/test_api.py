@@ -4,7 +4,7 @@ import pytest
 from httpx import AsyncClient
 
 
-@pytest.mark.anyio
+@pytest.mark.asyncio
 async def test_create_form(async_client: AsyncClient):
     form = {"form": {
                         "name": f"{randint(1, 1000000)}form`s name",
@@ -18,13 +18,13 @@ async def test_create_form(async_client: AsyncClient):
     }
 
 
-@pytest.mark.anyio
+@pytest.mark.asyncio
 async def test_get_forms(async_client: AsyncClient):
     response = await async_client.get("/doc_count")
     assert response.status_code == 200
 
 
-@pytest.mark.anyio
+@pytest.mark.asyncio
 async def test_get_form(async_client: AsyncClient):
     url = "/get_form?def_text11=asd&def_some=sss&def_email1=denis.pis@yahoo.com"  # noqa 501
     response = await async_client.post(url)
