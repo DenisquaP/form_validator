@@ -70,6 +70,7 @@ MONGO_DATABASE=default
 |------|--------|--------|-----------------|
 |**POST**|localhost:8000/create_form|Создать шаблон| {"name": "form122","def_text11": "text","def_email1": "email"}
 |**POST**|localhost:8000/get_form|Поиск подходящего шаблона| Query params(пример на картинке)|
+|**POST**|localhost:8000/get_form_REST|Поиск подходящего шаблона| Body {"def_text11": "text","def_email1": "email"} |
 |**GET**|localhost:8000/get_forms|Все шаблоны| None|
 
 ![](/opt/query_params.png)
