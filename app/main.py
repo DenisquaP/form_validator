@@ -16,8 +16,8 @@ client = MongoManager(HOST, PORT, DB)
 app = FastAPI(title="From validator")
 
 
-@app.get("/doc_count")
-async def doc_count_api():
+@app.get("/get_templates")
+async def get_templates_api():
     """_summary_ Return json with list of templates
 
     Returns:

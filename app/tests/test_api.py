@@ -19,8 +19,8 @@ async def test_create_form(async_client: AsyncClient):
 
 
 @pytest.mark.asyncio
-async def test_get_forms(async_client: AsyncClient):
-    response = await async_client.get("/doc_count")
+async def test_get_templates(async_client: AsyncClient):
+    response = await async_client.get("/get_templates")
     assert response.status_code == 200
 
 

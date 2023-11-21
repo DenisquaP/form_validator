@@ -15,14 +15,6 @@ class MongoManager:
         self.db = self.client[db]
         self.forms = self.db.forms
 
-    async def doc_count(self) -> int:
-        """_summary_ Get all docs
-
-        Returns:
-            int: count of templates in mongo
-        """
-        return await self.forms.count_documents({})
-
     async def get_templates(self, filter: dict = {}) -> list:
         """_summary_ Return templates by filter
 
